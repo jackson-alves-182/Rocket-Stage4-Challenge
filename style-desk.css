@@ -1,0 +1,285 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  font-size:62.5%; /* deixar padrão da fonte da página em 10px */
+}
+
+body{
+  background-color:#EFF1FF;
+}
+a{
+  text-decoration: none;
+  color:#4A4E69;
+}
+a:hover{
+  opacity: 0.6;
+}
+
+#page{
+  max-width:70.4rem;
+}
+
+header #logo{
+  background-color:#8E9AAF;
+  max-height:27.9rem;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  padding:3.2rem 0 2.9rem;
+}
+h1,h2{
+  font-family:"Staatliches";
+}
+p{
+  font-family: "Roboto", sans-serif;
+}
+
+header img{
+  width:17.7rem;
+  padding-bottom:3.2rem;
+}
+header h1{
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  color:white;
+  background-color:#CBC0D3;
+
+  font-weight:normal;
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  text-shadow:0 2px 2px rgba(0,0,0,0.25);
+  font-size:clamp(4.0rem, 4.2vw, 4.6rem);
+
+}
+header p{
+  margin:auto;
+  max-width:32rem;
+
+  font-size:clamp(1.4rem, 1.6vw, 2.0rem);
+  line-height:clamp(1.8rem, 1.6vw, 2.3rem);
+  color:#23053A;
+  text-align:center;
+
+  padding:2rem 0 3.0rem;
+}
+
+main{
+  padding:1.4rem 3.6rem 3.1rem;
+  display:flex;
+  flex-direction:column;
+}
+main #grid-container{
+  display:grid;
+  gap:3.2rem;
+}
+.side-container,
+.middle-container{
+  display:flex;
+  flex-direction:column;
+  gap:3.2rem;
+}
+
+main .card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  position:relative;
+}
+main img{
+  width:100%;
+  border-radius:5rem;
+
+  animation: card-moveup 0.9s 250ms backwards ;
+  transition:filter 0.8s, transform 0.5s;
+}
+main img:hover{
+  filter:contrast(120%);
+  transform:scale(1.1);
+
+  cursor:pointer;
+}
+main h2{
+  position:absolute;
+  right:2.2rem;
+  top:2rem;
+
+  font-size:clamp(2em, 2.5vh, 3em);
+  font-weight:400;
+  background-color:#FEEAFA;
+  color:#4A4E69;
+  text-shadow:1px 2px 2px rgba(0,0,0,0.25);
+
+  padding:0.3em 1.2em;
+  border-radius:2em;
+
+  animation: text-movedown 0.9s 250ms backwards;
+}
+footer{
+  padding-top:2rem;
+  margin:0 auto;
+}
+footer h6{
+  font-family:'Open Sans';
+  font-weight:400;
+  font-size:1.4rem;
+  color:#4A4E69;
+
+  bottom:2rem;
+  left:10rem;
+}
+footer h6 span{ 
+  font-weight:bold;
+}
+
+@keyframes text-movedown{
+  0%{
+    opacity:0;
+    transform:translateY(-30px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes card-moveup{
+  0%{
+    opacity:0;
+    transform:translateY(50px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(min-width:700px){
+  #page{
+    display:flex;
+    max-width:144rem;
+    padding:0 3rem;
+  }
+  header{
+    width:37rem;
+    height:100%;
+
+    flex:1;
+
+    background-color:#8e9aafe7;
+  }
+  header #logo{
+    background-color:none;
+  }
+  header p{
+    max-width:29rem;
+
+    font-family:"Roboto";
+    font-weight:400;
+    color:white;
+
+    padding-top:2em; 
+  }
+  main{
+    flex:2;
+  }
+  main #grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3;
+
+    padding:6rem 2rem;
+  }
+}
+@media(min-width:700px) and (max-width:1200px){
+  #page{
+    display:flex;
+    flex-direction:column;
+  }
+  header{
+    display:flex;
+
+    width:100%;
+    height:2rem;
+
+    margin-top:1.5rem;
+    border-radius:5rem;
+  }
+  header #logo{
+    background-color:#8E9AAF;
+
+    border-radius:5rem 0 0 5rem;
+    box-shadow:2px 0px 4px rgba(0,0,0,0.15);
+  }
+  header h1{
+    width:24.1rem;
+    top:11.8rem;
+    left:13rem;
+
+    border-radius:0 0 0rem 1.4rem;
+  }
+  header p{
+    max-width:38rem;
+  }
+  main{
+    padding:1.8rem 0.6rem 1.1rem;
+  }
+  main h2{
+    font-size:clamp(1.5em, 1.9vh, 2em);
+  }
+  footer{
+    padding-top:0rem;
+  }
+
+}
+
+@media(min-width:1201px){
+  #page{
+    padding:0;
+    max-width:100%;
+    height:100vh;
+  }
+  header{
+    flex:none;
+
+    min-width:35rem;
+    width:23%;
+  }
+  header p{
+    max-width:50rem;
+    margin: 0 2em;
+  }
+  header #logo{
+    background-color:#8E9AAF;
+    border-radius:0;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.25);
+  }
+ 
+  main #grid-container{
+    width:100%;
+    max-width:120vh;
+
+    display:grid;
+    gap:3.2rem;
+
+    margin:auto;
+    padding:0 0 2rem 0;
+  }
+  main h2{
+    font-size:clamp(1.5em, 1.9vh, 2.0em);
+  }
+  footer{
+    padding-top:0rem;
+  }
+}
