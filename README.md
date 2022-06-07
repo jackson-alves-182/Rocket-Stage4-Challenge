@@ -5,12 +5,18 @@
 
 <h2 align="center"> Versions for Mobile - Tablet - Desktop</h2>
 
+
+<h3 align="center"> Desktop </h3>
 <p align="center">
- 
-<img src="https://github.com/jackson-alves-182/archives-Readme/blob/main/Space-Cream/Mobile-Page.jpg"  height="290px">
-
-<img src="https://github.com/jackson-alves-182/archives-Readme/blob/main/Space-Cream/Tablet-Page.jpg" width="245x" >
-
- <img src="https://github.com/jackson-alves-182/archives-Readme/blob/main/Space-Cream/Desktop-Page.jpg" width="500px" height="250px">
+ <img src="https://github.com/jackson-alves-182/archives-Readme/blob/main/Space-Cream/Desktop-Page.jpg" width="600px">
 </p>
 
+<h3 align="center"> Tablet </h3>
+<p align="center">
+ <img src="https://github.com/jackson-alves-182/archives-Readme/blob/main/Space-Cream/Tablet-Page.jpg" width="600px" >
+</p>
+
+<h3 align="center"> Mobile </h3>
+<p align="center">
+ <img src="https://github.com/jackson-alves-182/archives-Readme/blob/main/Space-Cream/Mobile-Page.jpg"  height="490px">
+</p>
