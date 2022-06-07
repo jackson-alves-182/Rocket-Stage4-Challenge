@@ -12,6 +12,6 @@ Create a page using a design from FIGMA, with responsiveness and animations - Ch
 
 
  
- <img src="https://raw.githubusercontent.com/jackson-alves-182/archives-Readme/main/Space-Cream/Desktop-Page.jpg?token=GHSAT0AAAAAABU3YQZZRDPR2DUUT6TE4MESYU6SOBA" width="300px">
+ <img src="https://github.com/jackson-alves-182/archives-Readme/blob/main/Space-Cream/Desktop-Page.jpg" width="300px">
 </h3>
 
